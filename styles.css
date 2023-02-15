@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    48deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(251, 82, 131, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+    width: 80%;
+    box-shadow: 0 0 1em 0 rgba(0,0,0, 0.2);
+    border-radius: 20px;
+}
