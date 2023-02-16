@@ -20,10 +20,10 @@
         <img class="logo" src="./imgs/logo.png" alt="imagem-logo" />
         <nav>
           <ul id="menu-list">
-            <li class="nav-li"><a class="nav-link" href="">Consoles</a></li>
-            <li class="nav-li"><a class="nav-link" href="">Acessórios</a></li>
-            <li class="nav-li"><a class="nav-link" href="">Controles</a></li>
-            <li class="nav-li"><a class="nav-link" ref="">Outros</a></li>
+            <li class="nav-li"><a class="nav-link" >Consoles</a></li>
+            <li class="nav-li"><a class="nav-link" >Acessórios</a></li>
+            <li class="nav-li"><a class="nav-link" >Controles</a></li>
+            <li class="nav-li"><a class="nav-link" >Outros</a></li>
           </ul>
         </nav>
         <img
@@ -40,7 +40,7 @@
           <h3>Wireless Controller for PlayStation</h3>
           <p>Controle Original</p>
           <h4>R$ 222,50</h4>
-          <button class="buy">Comprar agora</button>
+          <button class="buy">Comprar agora <img src="./imgs/arrow.png" alt="seta"> </button>
         </div>
 
         <div class="column-2">
@@ -59,17 +59,5 @@
       </div>
     </div>
   </body>
-
-  <script>
-    const menuList = document.getElementById("menu-list");
-    menuList.style.maxHeight = "0px";
-
-    function showMenu() {
-      if (menuList.style.maxHeight == "0px") {
-        menuList.style.maxHeight = "120px";
-      } else {
-        menuList.style.maxHeight = "0px";
-      }
-    }
-  </script>
+  <script src="./script.js"></script>
 </html>
