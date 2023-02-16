@@ -18,7 +18,8 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 80vw;
+  height: 95vh;
   box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   background-color: white;
@@ -65,7 +66,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 100px 0;
+  margin: 100px 0 40px 0;
 }
 
 .column-1 {
@@ -115,6 +116,24 @@ h4 {
   border-radius: 6px;
   cursor: pointer;
   background: linear-gradient(to right, #fb5283, #ff3527);
+  transition: all 0.5s ease-in-out;
+}
+
+.buy img{
+  width: 30px;
+  display: none;
+}
+
+.buy:hover{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 160px;
+}
+
+.buy:hover img{
+  display: block;
 }
 
 .column-2 {
@@ -126,6 +145,7 @@ h4 {
 .controller {
   width: 90%;
   z-index: 2;
+  animation: moveController 2s infinite alternate;
 }
 
 .add-cart {
@@ -196,14 +216,27 @@ h4 {
     top: 60px;
     left: 60px;
     overflow: hidden;
+    transition: all 0.8s ease-in-out;
   }
 
   .menu-icon {
     display: block;
+    cursor: pointer;
   }
 
   .nav-li {
     display: block;
     margin-top: 5px;
+  }
+
+  .social-links{
+    position: relative;
+    bottom: 30px;
+  }
+}
+
+@keyframes moveController {
+  from {
+    transform: translate(+5%, -5%) rotate(-5deg);
   }
 }
